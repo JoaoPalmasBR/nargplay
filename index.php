@@ -3,13 +3,17 @@
 
 ?>
 <!doctype html>
-<html lang="en">
+<html lang="pt">
   <head>
-    <title>Narg Play</title>
+    <title>24K Hookah Lounge</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="icon" href="./logo.png">
+    <link rel="apple-touch-icon" href="./logo.png" sizes="180x180">
+<link rel="icon" href="./logo.png" sizes="32x32" type="image/png">
+<link rel="icon" href="./logo.png" sizes="16x16" type="image/png">
+<link rel="mask-icon" href="./logo.png" color="#563d7c">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -152,21 +156,35 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-          <div class="card card-signin my-5">
-            <div class="card-body">
-              <h5 class="card-title text-center">Login</h5>
-              <form class="form-signin">
-                <hr class="my-4">
-                <a href="login.php" class="btn btn-lg btn-google btn-block text-uppercase"><i class="fab fa-google mr-2"></i> Clique</a>
-              </form>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">
+            <img src="./logo.png" style="width:50px;" class="img-fluid" alt="Responsive image">
+              24K Hookah Lounge
+            </h5>
+            <form class="form-signin" action="./login/" method="post" autocomplete="off">
+              <div class="form-label-group">
+                <input type="text" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                <label for="inputEmail">Usuario</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required>
+                <label for="inputPassword">Senha</label>
+              </div>
+
+              
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Login</button>
+              <hr class="my-4">
+            </form>
           </div>
         </div>
       </div>
     </div>
+  </div>
     <!-- Optional JavaScript -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" ></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
