@@ -1,24 +1,6 @@
 <?php
-  require 'vendor/autoload.php';
-  use Auth0\SDK\Auth0;
-  
-  $auth0 = new Auth0([
-    'domain' => 'joaopalmas.auth0.com',
-    'client_id' => '1BO1Z5f66MHfFeG0loAi7PKpR1o5SUcW',
-    'client_secret' => 'YmxdmfS4U1AaOe0hp0X6ipQvDkzS5l2EIMjYMrotJYR-N1mQzEp1e2AV1h5_mD2u',
-    'redirect_uri' => 'https://localhost:80/callback',
-    'persist_id_token' => true,
-    'persist_access_token' => true,
-    'persist_refresh_token' => true,
-  ]);
-  $userInfo = $auth0->getUser();
-  if (!$userInfo) {
-    // We have no user info
-    // See below for how to add a login link
-  } else {
-      // User is authenticated
-      // See below for how to display user information
-  }
+  // index.php
+
 ?>
 <!doctype html>
 <html lang="en">
